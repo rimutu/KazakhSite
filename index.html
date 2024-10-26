@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>День Республики Казахстан</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f7f7f7;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Flag_of_Kazakhstan.svg/1024px-Flag_of_Kazakhstan.svg.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      background-color: rgba(30, 144, 255, 0.8);
+      color: white;
+      padding: 20px;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    #quiz {
+      background-color: #e8f4fa;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    button {
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c86ee;
+    }
+
+    #info::before {
+      content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Baiterek_monument_Astana.jpg/220px-Baiterek_monument_Astana.jpg');
+      display: block;
+      margin: 0 auto 20px;
+      width: 100px;
+      height: auto;
+    }
+
+    header::before {
+      content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Emblem_of_Kazakhstan_lat.svg/1024px-Emblem_of_Kazakhstan_lat.svg.png');
+      display: block;
+      margin: 0 auto 10px;
+      width: 80px;
+      height: auto;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: rgba(30, 144, 255, 0.8);
+      color: white;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>День Республики Казахстан</h1>
+    <p>Добро пожаловать на нашу викторину о Казахстане!</p>
+  </header>
+  
+  <section id="info">
+    <h2>О празднике</h2>
+    <p>День Республики Казахстан отмечается ежегодно 25 октября. Это важный день, посвященный независимости и культурному наследию страны.</p>
+  </section>
+  
+  <section id="quiz">
+    <h2>Викторина о Казахстане</h2>
+    <div id="question-container"></div>
+    <button id="submit">Проверить ответы</button>
+  </section>
+  
+  <section id="result">
+    <h2>Результат</h2>
+    <p id="score"></p>
+  </section>
+
+  <footer>
+    <p>Сайт создан: Даутов Мансур</p>
+    <p>Контактный номер: 8 700 267 28 35</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
